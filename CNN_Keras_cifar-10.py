@@ -72,6 +72,6 @@ model.fit(x_img_train_normalize, y_label_train_OneHot,
 #  衡量模型訓練誤差
 score = model.evaluate(x_img_test_normalize, y_label_test_OneHot,
                        verbose=0)  # 同fit的verbose，預設1，只能取0、1
-print('Test loss:', score[0])  # 0.0514164837168064
-print('Test accuracy:', score[1])  # 0.983299970626831
+print('Test loss:', score[0])
+print('Test accuracy:', score[1])
 
